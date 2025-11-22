@@ -1,36 +1,114 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Todo App — Full-Stack Next.js + MongoDB (CRUD)
 
-## Getting Started
+A modern full-stack **Todo application** built using **Next.js App Router**, **TypeScript**, **MongoDB Atlas**, and **Tailwind CSS**.
+This project demonstrates full CRUD functionality, persistent storage, and clean UI components — ideal for showcasing real-world full-stack skills.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+### ✅ Full CRUD (Create, Read, Update, Delete)
+
+* Add new tasks
+* Mark tasks as complete / incomplete
+* Delete tasks
+* Real-time UI updates using fetch API
+
+### 🧩 Full-Stack Architecture
+
+* **Next.js App Router**
+* **API Route Handlers** using `route.ts`
+* **MongoDB Atlas database**
+* **Mongoose models** for typed schema validation
+* Separate `lib/` and `models/` directories for clean project structure
+
+### 🎨 Modern UI
+
+* Built with **Tailwind CSS**
+* Responsive, clean, card-based layout
+* Smooth hover states and visual feedback
+* Accessible and keyboard-friendly
+
+### 🔐 Environment Variables
+
+* Secure database connection via `.env.local`
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend**
+
+* Next.js (App Router)
+* TypeScript
+* React (Client + Server Components)
+* Tailwind CSS
+
+### **Backend**
+
+* Next.js Route Handlers (`app/api/*`)
+* MongoDB Atlas (Cloud Database)
+* Mongoose ODM
+
+### **Tools**
+
+* Vercel-ready deployment
+* Environment variable support
+* Modern folder structure
+
+---
+
+## ⚙️ Environment Setup
+
+Create a `.env.local` file in the project root:
+
+```
+MONGODB_URI=your-mongodb-connection-string
+```
+
+---
+
+## ▶️ Running the Project
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Your app will be available at:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000/
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧪 API Routes
 
-To learn more about Next.js, take a look at the following resources:
+| Method | Endpoint         | Description            |
+| ------ | ---------------- | ---------------------- |
+| GET    | `/api/todos`     | Get all tasks          |
+| POST   | `/api/todos`     | Create a new task      |
+| PATCH  | `/api/todos/:id` | Toggle completed state |
+| DELETE | `/api/todos/:id` | Delete a task          |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Learning Objectives
 
-## Deploy on Vercel
+This project was built to strengthen full-stack development skills:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Building with **Next.js App Router**
+* Understanding **Server vs Client Components**
+* Creating **API Routes with TypeScript**
+* Managing data with **MongoDB Atlas**
+* Designing UI with **Tailwind CSS**
+* Connecting frontend → backend → database
+* Clean and scalable project structure
